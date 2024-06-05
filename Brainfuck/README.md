@@ -5,12 +5,13 @@ wtf
 
 ### \<List>
 
-- [Print Alphabet (2024.06.05)](#print-alphabet-20240605)
+- [Print Alphabet with Loop Statement (2024.06.05)](#print-alphabet-with-loop-statement-20240605)
 
 
-## [Print Alphabet (2024.06.05)](#list)
+## [Print Alphabet with Loop Statement (2024.06.05)](#list)
 
 - My initial *Brainf**** practice; Print from A to Z
+  - I think I've become ready to deal with Assembly!
 - Reference
   - [Brainfuck (Wikipedia)](https://en.wikipedia.org/wiki/Brainfuck)
 - Development Environment
