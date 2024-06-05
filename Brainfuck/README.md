@@ -21,14 +21,14 @@ wtf
     <summary>Code : PrintAlphabet.bf</summary>
 
     ```brainfuck
-    # 1) Add 1 from A(65) 25 times at ptr0
+    # 1) Add 1 from 65('A') 25 times at ptr0
 
     ptr0 +++++ +++++ +++++ +++++ +++++ +++++ +++++ +++++ +++++ +++++
          +++++ +++++ +++++ .                                          # Let ptr0 = 65 and print 'A'
          +.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.           # Increment and print ptr0 25 times
     ```
     ```brainfuck
-    # 2) Use square brackets statement
+    # 2) Use square brackets statements
 
     ptr0 [-]                                                          # Reset ptr0 as 0
     ptr0 +++++ +++++ . [-]                                            # Let ptr0 = 10 (LF) & Line replacement & Reset ptr0
