@@ -14,8 +14,52 @@ wtf
 
 ### **\<List>**
 
+- [Star Pattern (2024.06.07)](#star-pattern-20240607)
 - [Print Even Numbers with Conditional Statement (2024.06.06)](#print-even-numbers-with-conditional-statement-20240606)
 - [Print Alphabet with Loop Statement (2024.06.05)](#print-alphabet-with-loop-statement-20240605)
+
+
+## [Star Pattern (2024.06.07)](#list)
+
+- Only can input a number as a character between 0 and 9
+- Learned nested `[]` brackets and the behavior of `<>` within them
+- Code and Result
+  <details>
+    <summary>Code : StarPattern.bf</summary>
+
+    ```brainfuck
+    < ptr0 +++++
+    [ > ptr1 +++++ +++++ < ptr0 - ] > ptr1 --                   # Let ptr1 = (10 * 5) minus 2 = 48('0')
+    < ptr0 ++++
+    [ >> ptr2 +++++ +++++ << ptr0 - ] >> ptr2 ++                # Let ptr2 = (10 * 4) plus 2 = 42('*')
+    > ptr3 +++++ +++++                                          # Let ptr3 = 10 (LF)
+
+    > prt4 ,                                                    # Input ptr4 between '0' and '9'
+    <<< [ >>> ptr4 - <<< ptr1 - ]                               # Convert ptr4 from char to int (ptr4 minus '0')
+
+    >>> ptr4
+    [   << ptr2 .           > ptr3 . > ptr4 -
+      [ << ptr2 ..          > ptr3 . > ptr4 -
+      [ << ptr2 ...         > ptr3 . > ptr4 -
+      [ << ptr2 ....        > ptr3 . > ptr4 -
+      [ << ptr2 .....       > ptr3 . > ptr4 -
+      [ << ptr2 ..... .     > ptr3 . > ptr4 -
+      [ << ptr2 ..... ..    > ptr3 . > ptr4 -
+      [ << ptr2 ..... ...   > ptr3 . > ptr4 -
+      [ << ptr2 ..... ....  > ptr3 . > ptr4 - ]]]]] ]]]]
+    ```
+  </details>
+  <details>
+    <summary>Result</summary>
+
+    ```brainfuck
+    *
+    **
+    ***
+    ****
+    *****
+    ```
+  </details>
 
 
 ## [Print Even Numbers with Conditional Statement (2024.06.06)](#list)
