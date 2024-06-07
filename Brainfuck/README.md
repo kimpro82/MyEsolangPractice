@@ -15,8 +15,8 @@ wtf
 ### **\<List>**
 
 - [Star Pattern (2024.06.07)](#star-pattern-20240607)
-- [Print Even Numbers with Conditional Statement (2024.06.06)](#print-even-numbers-with-conditional-statement-20240606)
-- [Print Alphabet with Loop Statement (2024.06.05)](#print-alphabet-with-loop-statement-20240605)
+- [Conditional Statement : Print Even Numbers (2024.06.06)](#conditional-statement--print-even-numbers-20240606)
+- [Loop Statement : Print A to Z (2024.06.05)](#loop-statement--print-a-to-z-20240605)
 
 
 ## [Star Pattern (2024.06.07)](#list)
@@ -49,7 +49,7 @@ wtf
       [ << ptr2 ..... ....  > ptr3 . > ptr4 - ]]]]] ]]]]
     ```
   </details>
-  <details>
+  <details open="">
     <summary>Result</summary>
 
     ```brainfuck
@@ -62,14 +62,14 @@ wtf
   </details>
 
 
-## [Print Even Numbers with Conditional Statement (2024.06.06)](#list)
+## [Conditional Statement : Print Even Numbers (2024.06.06)](#list)
 
 - Limitations of Using Loops to Approximate Conditional Statements
   - Loops could only approximate conditional behavior, failing to fully replicate the functionality of standard conditional statements.
   - Reusing pointer values that had been set to 0 within [] brackets was not possible when checking conditional requirements.
 - Code and Result
   <details>
-    <summary>Code : PrintEvenNumbers.bf</summary>
+    <summary>Code : EvenNumbers.bf</summary>
 
     ```brainfuck
     # 1) Add 2 from 48('0') 4 times at ptr0
@@ -107,7 +107,7 @@ wtf
     # Unable to use new ptr to judge if odd or even because it can't be reused in loop statement
     ```
   </details>
-  <details>
+  <details open="">
     <summary>Result</summary>
 
     ```brainfuck
@@ -118,13 +118,13 @@ wtf
   </details>
 
 
-## [Print Alphabet with Loop Statement (2024.06.05)](#list)
+## [Loop Statement : Print A to Z (2024.06.05)](#list)
 
 - My initial *Brainf**** practice; Print from A to Z
   - I think I've become ready to deal with Assembly!
 - Code and Result
   <details>
-    <summary>Code : PrintAlphabet.bf</summary>
+    <summary>Code : Alphabet.bf</summary>
 
     ```brainfuck
     # 1) Add 1 from 65('A') 25 times at ptr0
@@ -146,7 +146,7 @@ wtf
     [ > ptr1 + . < ptr0 - ]                                           # Loop to increment 25 times & print ptr1 from 66 ('B') to 90 ('Z')
     ```
   </details>
-  <details>
+  <details open="">
     <summary>Result</summary>
 
     ```brainfuck
