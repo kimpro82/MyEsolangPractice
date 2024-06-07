@@ -53,6 +53,9 @@ wtf
     <summary>Result</summary>
 
     ```brainfuck
+    5
+    ```
+    ```brainfuck
     *
     **
     ***
