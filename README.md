@@ -5,5 +5,6 @@ Romantic programming
 
 ## [Brainf***](/Brainfuck/README.md)
 
-- [Print Even Numbers with Conditional Statement (2024.06.06)](/Brainfuck/README.md#print-even-numbers-with-conditional-statement-20240606)
-- [Print Alphabet with Loop Statement (2024.06.05)](/Brainfuck/README.md#print-alphabet-with-loop-statement-20240605)
+- [Star Pattern (2024.06.07)](/Brainfuck/README.md#star-pattern-20240607)
+- [Conditional Statement : Print Even Numbers (2024.06.06)](/Brainfuck/README.md#conditional-statement--print-even-numbers-20240606)
+- [Loop Statement : Print A to Z (2024.06.05)](/Brainfuck/README.md#loop-statement--print-a-to-z-20240605)
