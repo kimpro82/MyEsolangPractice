@@ -26,7 +26,7 @@ wtf
 - Acquiring new skills (slightly tricky)
   - Possible to copy values  
     : Transfer values to two or more pointers while consuming the original pointer's value
-  - Implementing loops with a general flow as `if` using an index variable `i`
+  - Implementing loops with a general flow as `for` using an index variable `i`
 - Code and Result
   <details>
     <summary>Code : StarPattern2.bf</summary>
