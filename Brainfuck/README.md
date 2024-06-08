@@ -9,6 +9,7 @@ wtf
   - [Brainfuck (Wikipedia)](https://en.wikipedia.org/wiki/Brainfuck)
 - Development Environments
   - [JDoodle / Online B******K Compiler IDE](https://www.jdoodle.com/execute-b******k-online)
+  - [Ideone / Online Brainfuck compiler and IDE](https://ideone.com/l/brainfuck)
   - [Tutorialspoint / Online Brainfuck Compiler](https://www.tutorialspoint.com/execute_brainfk_online.php)
 
 
