@@ -17,8 +17,8 @@ wtf
 
 - [Star Pattern 2 (2024.06.08)](#star-pattern-2-20240608)
 - [Star Pattern (2024.06.07)](#star-pattern-20240607)
-- [Conditional Statement : Print Even Numbers (2024.06.06)](#conditional-statement--print-even-numbers-20240606)
-- [Loop Statement : Print A to Z (2024.06.05)](#loop-statement--print-a-to-z-20240605)
+- [Even Numbers (2024.06.06)](#even-numbers-20240606)
+- [A to Z (2024.06.05)](#a-to-z-20240605)
 
 
 ## [Star Pattern 2 (2024.06.08)](#list)
@@ -123,7 +123,7 @@ wtf
   </details>
 
 
-## [Conditional Statement : Print Even Numbers (2024.06.06)](#list)
+## [Even Numbers (2024.06.06)](#list)
 
 - Limitations of Using Loops to Approximate Conditional Statements
   - Loops could only approximate conditional behavior, failing to fully replicate the functionality of standard conditional statements.
@@ -179,9 +179,9 @@ wtf
   </details>
 
 
-## [Loop Statement : Print A to Z (2024.06.05)](#list)
+## [A to Z (2024.06.05)](#list)
 
-- My initial *Brainf**** practice; Print from A to Z
+- My initial *Brainf**** practice; Print the whole Alphabet
   - I think I've become ready to deal with Assembly!
 - Code and Result
   <details>
