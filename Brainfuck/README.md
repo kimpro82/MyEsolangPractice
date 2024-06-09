@@ -9,14 +9,72 @@ wtf
   - [Brainfuck (Wikipedia)](https://en.wikipedia.org/wiki/Brainfuck)
 - Development Environments
   - [JDoodle / Online B******K Compiler IDE](https://www.jdoodle.com/execute-b******k-online)
+  - [Ideone / Online Brainfuck compiler and IDE](https://ideone.com/l/brainfuck)
   - [Tutorialspoint / Online Brainfuck Compiler](https://www.tutorialspoint.com/execute_brainfk_online.php)
 
 
 ### **\<List>**
 
+- [Star Pattern 2 (2024.06.08)](#star-pattern-2-20240608)
 - [Star Pattern (2024.06.07)](#star-pattern-20240607)
-- [Conditional Statement : Print Even Numbers (2024.06.06)](#conditional-statement--print-even-numbers-20240606)
-- [Loop Statement : Print A to Z (2024.06.05)](#loop-statement--print-a-to-z-20240605)
+- [Even Numbers (2024.06.06)](#even-numbers-20240606)
+- [A to Z (2024.06.05)](#a-to-z-20240605)
+
+
+## [Star Pattern 2 (2024.06.08)](#list)
+
+- Acquiring new skills (slightly tricky)
+  - Possible to copy values  
+    : Transfer values to two or more pointers while consuming the original pointer's value
+  - Implementing loops with a general flow as `for` using an index variable `i`
+- Code and Result
+  <details>
+    <summary>Code : StarPattern2.bf</summary>
+
+    ```brainfuck
+    # Set constants
+    < ptr0 ++++                                                 # Let ptr0 = 4
+    [ ptr0 > ptr1 +++++ +++++ < ptr0 - ]                        # Let ptr1 = (10 * 4) = 40
+    > [ ptr1 > ptr2 + > ptr3 + > ptr4 + <<< ptr1 - ]            # Move ptr1 to ptr2 ptr3 ptr4
+    > ptr2 +++++ +++                                            # Let ptr2 = 48 ('0')
+    > ptr3 ++                                                   # Let ptr3 = 42 ('*')
+    > ptr4 ----- ---                                            # Let ptr4 = 32 (Space)
+    > ptr5 +++++ +++++                                          # Let ptr5 = 10 (LF)
+
+    # Input a number
+    > ptr6 ,                                                    # Input ptr6 between '0' and '9'
+    <<<< [ ptr2 >>>> ptr6 - <<<< ptr2 - ]                       # Convert ptr6 from char to int (ptr6 minus '0')
+    >>>> [ ptr6 > ptr7 + > ptr8 + << ptr6 -]                    # Move ptr6 to ptr7 and ptr8
+    >>>> ptr10 +                                                # Let ptr10 = 1
+
+    # Print the pattern with general loop statement
+    <<<
+    [ ptr7                                                      # ptr7: The loop times
+      > [ ptr8 <<<< ptr4 . >>>>> ptr9 + < ptr8 - ]              # ptr8 & ptr9: The number of spaces
+      >> [ ptr10 <<<<< << ptr3 . >>>>> >>> ptr11 + < ptr10 - ]  # ptr10 & ptr11: The number of stars
+      > [ ptr11 < ptr10 + > ptr11 - ] < ptr10 ++                # Recover ptr10 from ptr11 and add 2
+      < [ ptr9 < ptr8 + > ptr9 - ] < ptr8 -                     # Recover ptr8 from ptr9 and subtract 1
+      <<< ptr5 .                                                # Line replacement
+      >> ptr7 -
+    ]
+    ```
+  </details>
+  <details open="">
+    <summary>Result</summary>
+
+    ```brainfuck
+    7
+    ```
+    ```brainfuck
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+    *************
+    ```
+  </details>
 
 
 ## [Star Pattern (2024.06.07)](#list)
@@ -65,7 +123,7 @@ wtf
   </details>
 
 
-## [Conditional Statement : Print Even Numbers (2024.06.06)](#list)
+## [Even Numbers (2024.06.06)](#list)
 
 - Limitations of Using Loops to Approximate Conditional Statements
   - Loops could only approximate conditional behavior, failing to fully replicate the functionality of standard conditional statements.
@@ -121,9 +179,9 @@ wtf
   </details>
 
 
-## [Loop Statement : Print A to Z (2024.06.05)](#list)
+## [A to Z (2024.06.05)](#list)
 
-- My initial *Brainf**** practice; Print from A to Z
+- My initial *Brainf**** practice; Print the whole Alphabet
   - I think I've become ready to deal with Assembly!
 - Code and Result
   <details>
