@@ -29,7 +29,7 @@ wtf
   - Removes all characters except `[]<>\+\-\.,` using sed.
   - Usage
     ```bash
-    ./CleanBFCode.sh ./filename
+    ./BFCodeCleaner.sh ./filename
     ```
 - Code and Result
   <details>
