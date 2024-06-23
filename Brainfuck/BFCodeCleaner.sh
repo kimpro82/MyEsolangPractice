@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script: CleanBFCode.sh
+# Script: BFCodeCleaner.sh
 #
 # Author      : kimpro82
 # Date        : 2024.06.23
