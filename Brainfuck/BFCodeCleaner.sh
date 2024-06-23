@@ -11,7 +11,7 @@
 #     and saves the cleaned content into it.
 #   - An intermediate temporary file is used for processing.
 #   - The script ensures the final cleaned file ends with a newline character.
-# Usage       : ./BFCodeCleaner.sh filename
+# Usage       : ./BFCodeCleaner.sh ./filename
 # Argument    :
 #   - filename: The name of the file to be cleaned. Should be a valid file path.
 
