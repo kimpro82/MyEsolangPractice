@@ -11,7 +11,7 @@
 #     and saves the cleaned content into it.
 #   - An intermediate temporary file is used for processing.
 #   - The script ensures the final cleaned file ends with a newline character.
-# Usage       : ./CleanBFCode.sh filename
+# Usage       : ./BFCodeCleaner.sh filename
 # Argument    :
 #   - filename: The name of the file to be cleaned. Should be a valid file path.
 
@@ -26,11 +26,11 @@ filename="$1"
 
 # Check if the file exists
 if [ ! -f "$filename" ]; then
-  echo "File not found!"
+  echo "Error: File '$filename' not found!"
   exit 1
 fi
 
-# Create the new filename with '_cleaned' suffix
+# Create the new filename with '_Cleaned' suffix
 temp_filename="${filename%.*}_Temporary.${filename##*.}"
 new_filename="${filename%.*}_Cleaned.${filename##*.}"
 
