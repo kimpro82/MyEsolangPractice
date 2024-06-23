@@ -15,11 +15,71 @@ wtf
 
 ### **\<List>**
 
+- [Bash : BrainF*** Code Cleaner (2024.06.23)](#bash--brainf-code-cleaner-20240623)
 - [Star Pattern 3 (2024.06.23)](#star-pattern-3-20240623)
 - [Star Pattern 2 (2024.06.08)](#star-pattern-2-20240608)
 - [Star Pattern (2024.06.07)](#star-pattern-20240607)
 - [Even Numbers (2024.06.06)](#even-numbers-20240606)
 - [A to Z (2024.06.05)](#a-to-z-20240605)
+
+
+## [Bash : BrainF*** Code Cleaner (2024.06.23)](#list)
+
+- Creates a new file with `_Cleaned` suffix appended to the original filename.
+  - Removes all characters except `[]<>\+\-\.,` using sed.
+  - Usage
+    ```bash
+    ./CleanBFCode.sh ./filename
+    ```
+- Code and Result
+  <details>
+    <summary>Code : BFCodeCleaner.sh</summary>
+
+    ```bash
+    #!/bin/bash
+
+    # Check if a filename is provided
+    if [ -z "$1" ]; then
+      echo "Usage: $0 filename"
+      exit 1
+    fi
+
+    # Get the filename from the argument
+    filename="$1"
+
+    # Check if the file exists
+    if [ ! -f "$filename" ]; then
+      echo "File not found!"
+      exit 1
+    fi
+
+    # Create the new filename with '_cleaned' suffix
+    temp_filename="${filename%.*}_Temporary.${filename##*.}"
+    new_filename="${filename%.*}_Cleaned.${filename##*.}"
+
+    # Use tr to remove newline characters and save to a temporary file
+    tr -d '\n' < "$filename" > "$temp_filename"
+
+    # Use sed to remove all characters except '[]<>+-.,'
+    sed 's/[^][<>+-.,]//g' "$temp_filename" > "$new_filename"
+
+    # Add a newline character at the end of the new file
+    echo "" >> "$new_filename"
+
+    # Remove the temporary file
+    rm "$temp_filename"
+
+    # Confirm the operation is complete
+    echo "Cleaned file saved as $new_filename"
+    ```
+  </details>
+  <details open="">
+    <summary>Result : StarPattern3_Cleaned.bf</summary>
+
+    ```brainfuck
+    ++++[>++++++++++<-]>[>+>+>+<<<-]>++++++++>++>-------->++++++++++>,<<<<[>>>>-<<<<-]>>>>[>+>+>>>>+<<<<<<-]>>>>+<<<[>[<<<<.>>>>>+<-]>>[<<<<<<<.>>>>>>>>+<-]>[<+>-]<++<[<+>-]<-<<<.>>-]>++>>---->>[<<<<<+>>>>>-]<<<<<-[>[<<<<.>>>>>+<-]>>[<<<<<<<.>>>>>>>>+<-]>[<+>-]<--<[<+>-]<+<<<.>>-]
+    ```
+  </details>
 
 
 ## [Star Pattern 3 (2024.06.23)](#list)
@@ -122,13 +182,15 @@ wtf
     > ptr3 ++                                                   # Let ptr3 = 42 ('*')
     > ptr4 ----- ---                                            # Let ptr4 = 32 (Space)
     > ptr5 +++++ +++++                                          # Let ptr5 = 10 (LF)
-
+    ```
+    ```brainfuck
     # Input a number
     > ptr6 ,                                                    # Input ptr6 between '0' and '9'
     <<<< [ ptr2 >>>> ptr6 - <<<< ptr2 - ]                       # Convert ptr6 from char to int (ptr6 minus '0')
     >>>> [ ptr6 > ptr7 + > ptr8 + << ptr6 -]                    # Move ptr6 to ptr7 and ptr8
     >>>> ptr10 +                                                # Let ptr10 = 1
-
+    ```
+    ```brainfuck
     # Print the pattern with general loop statement
     <<<
     [ ptr7                                                      # ptr7: The loop times
@@ -173,10 +235,12 @@ wtf
     < ptr0 ++++
     [ >> ptr2 +++++ +++++ << ptr0 - ] >> ptr2 ++                # Let ptr2 = (10 * 4) plus 2 = 42('*')
     > ptr3 +++++ +++++                                          # Let ptr3 = 10 (LF)
-
+    ```
+    ```brainfuck
     > prt4 ,                                                    # Input ptr4 between '0' and '9'
     <<< [ >>> ptr4 - <<< ptr1 - ]                               # Convert ptr4 from char to int (ptr4 minus '0')
-
+    ```
+    ```brainfuck
     >>> ptr4
     [   << ptr2 .           > ptr3 . > ptr4 -
       [ << ptr2 ..          > ptr3 . > ptr4 -
