@@ -7,7 +7,7 @@ Option Explicit
 
 Private Sub RunBrainfuck()
 
-    ' Diclare variables
+    ' Declare variables
     Dim code As String
     Dim inputStr As String
     Dim cells(255) As Long
@@ -80,13 +80,12 @@ Private Sub RunBrainfuck()
     Range("D18").Value = output
 
     Exit Sub
-    
+
 ErrorHandler:
-    
+
     Range("D18").Value = "Error at position: " & codePtr & ", Character: " & currentChar
 
 End Sub
-
 
 
 Private Sub btnRun_Click()
@@ -96,4 +95,3 @@ Private Sub btnRun_Click()
     Application.Calculation = xlAutomatic
 
 End Sub
-
