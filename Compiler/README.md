@@ -1,4 +1,4 @@
-# [Brainf*** Compiler](/README.md#brainf)
+# [My Esolang Compilers](/README.md#compiler)
 
 I'm the man who can implement a compiler of a Turing complete programming language.
 
