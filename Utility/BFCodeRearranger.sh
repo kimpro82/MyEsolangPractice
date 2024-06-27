@@ -58,7 +58,7 @@ replace_pattern() {
   char="${content:i:1}"
   if [[ "$char" == "#" ]]; then
     if [ $index -lt ${#filtered_content} ]; then
-    result+="${filtered_content:char_index:1}"
+    result+="${filtered_content:index:1}"
     index=$((index + 1))
     else
     result+="#"
