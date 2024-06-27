@@ -21,6 +21,7 @@ I'm the man who can implement an interpreter of a Turing complete programming la
   - Gradually output intermediate results during the program's progress, not just the final result.
   - Show unused pointer values as empty cells instead of zero.
   - Clear the cells in column `B` that display pointer values and the cell `D18` that displays the execution result when the `Run` button is pressed.
+  - Refactor the code.
 - Code
   <details>
     <summary>BrainfuckInterpreter_0.9.bas</summary>
