@@ -3,9 +3,9 @@
 Romantic programming
 
 
-## [Compiler](/Compiler/README.md)
+## [Interpreter](/Interpreter/README.md)
 
-- [VBA : Brainf*** Compiler & Debugger Version 0.9 (2024.06.26)](/Compiler/README.md#vba--compiler--debugger-version-09-20240626)
+- [VBA : Interpreter & Debugger Version 0.9 (2024.06.26)](/Interpreter/README.md#vba--interpreter--debugger-version-09-20240626)
 
 
 ## [Utility](/Utility/README.md)
