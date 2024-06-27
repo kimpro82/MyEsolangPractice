@@ -5,13 +5,13 @@ I'm the man who can implement an interpreter of a Turing complete programming la
 
 ### **\<List>**
 
-- [VBA : Interpreter & Debugger Version 0.9 (2024.06.26)](#vba--interpreter--debugger-version-09-20240626)
+- [VBA : Interpreter & Debugger Version 0.9 Beta (2024.06.26)](#vba--interpreter--debugger-version-09-beta-20240626)
 
 
-## [VBA : Interpreter & Debugger Version 0.9 (2024.06.26)](#list)
+## [VBA : Interpreter & Debugger Version 0.9 Beta (2024.06.26)](#list)
 
 - Features
-  ![Brainfuck Interpreter Ver. 0.9](/Compiler/Images/BrainfuckInterpreter_0.9.png)
+  ![Brainfuck Interpreter Ver. 0.9](./Images/BrainfuckInterpreter_0.9_Beta.png)
   - Above all, the interpretation of Brainfuck code is successful.
   - The input value requested by the `,` keyword can be applied.
   - Display the values stored in each pointer on the left side of the screen to monitor them(up to 255 pointers can be used).
