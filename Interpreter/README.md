@@ -1,18 +1,18 @@
-# [My Esolang Compilers](/README.md#compiler)
+# [My Esolang Interpreters](/README.md#interpreter)
 
-I'm the man who can implement a compiler of a Turing complete programming language.
+I'm the man who can implement an interpreter of a Turing complete programming language.
 
 
 ### **\<List>**
 
-- [VBA : Compiler & Debugger Version 0.9 (2024.06.26)](#vba--compiler--debugger-version-09-20240626)
+- [VBA : Interpreter & Debugger Version 0.9 (2024.06.26)](#vba--interpreter--debugger-version-09-20240626)
 
 
-## [VBA : Compiler & Debugger Version 0.9 (2024.06.26)](#list)
+## [VBA : Interpreter & Debugger Version 0.9 (2024.06.26)](#list)
 
 - Features
-  ![Brainfuck Compiler Ver. 0.9](/Compiler/Images/BrainfuckCompiler_0.9.png)
-  - Above all, the compilation of Brainfuck code is successful.
+  ![Brainfuck Interpreter Ver. 0.9](/Compiler/Images/BrainfuckInterpreter_0.9.png)
+  - Above all, the interpretation of Brainfuck code is successful.
   - The input value requested by the `,` keyword can be applied.
   - Display the values stored in each pointer on the left side of the screen to monitor them(up to 255 pointers can be used).
 - Future Improvements
@@ -23,7 +23,7 @@ I'm the man who can implement a compiler of a Turing complete programming langua
   - Clear the cells in column `B` that display pointer values and the cell `D18` that displays the execution result when the `Run` button is pressed.
 - Code
   <details>
-    <summary>BrainfuckCompiler_0.9.bas</summary>
+    <summary>BrainfuckInterpreter_0.9.bas</summary>
 
   ```vba
   Option Explicit
