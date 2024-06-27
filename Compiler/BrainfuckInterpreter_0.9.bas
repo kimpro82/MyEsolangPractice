@@ -1,4 +1,4 @@
-' BrainFuck Compiler & Debugger Version 0.9 Beta
+' BrainFuck Interpreter & Debugger Version 0.9 Beta
 ' 2024.06.26
 
 
