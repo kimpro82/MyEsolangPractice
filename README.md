@@ -10,6 +10,7 @@ Romantic programming
 
 ## [Utility](/Utility/README.md)
 
+- [Bash : BrainF*** Code Rearranger (2024.06.27)](/Utility/README.md#bash--brainf-code-rearranger-20240627)
 - [Bash : BrainF*** Code Cleaner (2024.06.23)](/Utility/README.md#bash--brainf-code-cleaner-20240623)
 
 
