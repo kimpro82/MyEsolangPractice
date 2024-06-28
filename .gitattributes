@@ -1,0 +1,3 @@
+*.bas linguist-language=VBA
+
+/Utility/*.bf linguist-vendored

@@ -5,11 +5,12 @@ Romantic programming
 
 ## [Interpreter](/Interpreter/README.md)
 
-- [VBA : Interpreter & Debugger Version 0.9 Beta (2024.06.26)](/Interpreter/README.md#vba--interpreter--debugger-version-09-beta-20240626)
+- [VBA : Brainf*** Interpreter & Debugger Version 0.9 Beta (2024.06.26)](./Interpreter/README.md#vba--brainf-interpreter--debugger-version-09-beta-20240626)
 
 
 ## [Utility](/Utility/README.md)
 
+- [Bash : BrainF*** Code Rearranger (2024.06.27)](/Utility/README.md#bash--brainf-code-rearranger-20240627)
 - [Bash : BrainF*** Code Cleaner (2024.06.23)](/Utility/README.md#bash--brainf-code-cleaner-20240623)
 
 
