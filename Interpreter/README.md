@@ -15,14 +15,14 @@ I'm the man who can implement an interpreter of a Turing complete programming la
   ![Brainfuck Interpreter Ver. 1.0 Beta](./Images/BrainfuckInterpreter_1.0_Beta.gif)
   - Debugging Support
     - Added an On/Off button to control debugging mode
-    - Provided more monitoring items : Code Location, Loop Stack Depth, Debug mode (On/Off), etc.
+    - Provided more monitoring items : Code Location, Loop Stack Depth, Debug mode (On/Off) and etc.
     - Gradual output and current value of each pointer during debugging
       - Leave the value of unused pointers blank to distinguish from '0'
       - Visualize the executed part of the code by highlighting it in red
     - Clear the output cells when switching between code execution and debugging mode
   - Code Refactoring
     - Declared a unified structure for variables: `BrainfuckState`
-    - Separated procedures: `GetBrainfuckState()`, `SetBrainfuckState()`, and `SetErrorState()` from `RunBrainfuck()`
+    - Separated procedures: `GetBrainfuckState()`, `SetBrainfuckState()` and `SetErrorState()` from `RunBrainfuck()`
 - Code
   <details>
     <summary>BrainfuckInterpreter_1.0_Beta.bas</summary>
