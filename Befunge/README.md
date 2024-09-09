@@ -1,6 +1,6 @@
 # [My Befunge Practice](/README.md#befunge)
 
-wtf
+wtf than [Brainf***](/Brainfuck/README.md)
 
 
 ### **\<References>**
