@@ -47,7 +47,6 @@ wtf than [Brainf***](/Brainfuck/README.md)
   <details open="">
     <summary>Results</summary>
 
-
     ```txt
     Hello World!
     Hello World!
