@@ -1,3 +1,4 @@
 *.bas linguist-language=VBA
+/Befunge/*.bf linguist-language=Befunge
 
 /Utility/*.bf linguist-vendored
