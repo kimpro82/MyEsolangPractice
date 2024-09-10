@@ -29,7 +29,7 @@ wtf than [Brainf***](/Brainfuck/README.md)
     <summary>Code : HelloWorld.bf</summary>
 
     ```befunge
-    v How to use docstrings and comments in Befunge         // pseudo-docstrings
+    v How to use docstrings and comments in Befunge         // Pseudo-docstrings
     v 2024.09.10
 
     v // main()
