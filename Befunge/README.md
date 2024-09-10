@@ -14,7 +14,37 @@ wtf than [Brainf***](/Brainfuck/README.md)
 
 ### **\<List>**
 
+- [Use Pseudo-Docstrings and Comments (2024.09.10)](#use-pseudo-docstrings-and-comments-20240910)
 - [Hello World (2024.09.09)](#hello-world-20240909)
+
+
+## [Use Pseudo-Docstrings and Comments (2024.09.10)](#list)
+
+- **Not impossible!**
+  - I first considered using `#` to skip over comment characters, but it required an exact match in the number of `#`s, risking errors.
+  - The solution was simple: write freely outside the pointer's path (`<>^v`).
+  - To make comments clearer, I prefixed them with `//`, similar to C-like languages.
+- Code and Results
+  <details open="">
+    <summary>Code : HelloWorld.bf</summary>
+
+    ```befunge
+    v How to use docstrings and comments in Befunge         // pseudo-docstrings
+    v 2024.09.10
+
+    v // main()
+    < v "This Befunge code demonstrates pseudo-docstrings and comments"
+      > : v                                                 // Comments can be placed anywhere not pointed
+      ^ , _ 55+, @                                          // End of the program
+    ```
+  </details>
+  <details open="">
+    <summary>Results</summary>
+
+    ```txt
+    This Befunge code demonstrates pseudo-docstrings and comments
+    ```
+  </details>
 
 
 ## [Hello World (2024.09.09)](#list)
