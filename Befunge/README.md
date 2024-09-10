@@ -5,11 +5,12 @@ wtf than [Brainf***](/Brainfuck/README.md)
 
 ### **\<References>**
 
-- Reference
+- References
   - [Befunge (Esolang)](https://esolangs.org/wiki/Befunge)
   - [Bef-93 Tutorial](https://bef-93.blogspot.com/)
 - Development Environments
-  - [JDoodle / Online Befunge Compiler IDE](https://www.jdoodle.com/execute-befunge-online)
+  - [JDoodle / Online Befunge Compiler](https://www.jdoodle.com/execute-befunge-online)
+
 
 ### **\<List>**
 
@@ -36,12 +37,12 @@ wtf than [Brainf***](/Brainfuck/README.md)
     <summary>Code : HelloWorld.bf</summary>
 
     ```befunge
-    <v"Hello World!"
-    > ,,,,,,,,,,,, 55+, v
+    < v "Hello World!"
+      >  ,,,,,,,,,,,, 55+, v
 
-    v "Hello World!"     <
-    > : v
-    ^ , _ 55+, @
+      v "Hello World!"     <
+      > : v
+      ^ , _ 55+, @
     ```
   </details>
   <details open="">
