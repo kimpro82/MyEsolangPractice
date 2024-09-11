@@ -23,7 +23,7 @@ wtf than [Brainf***](/Brainfuck/README.md)
 
 - Even I think it's pretty clever?!
   - The user inputs a natural number between 1 and 3, then the program follows the ladder to display the result
-  - I also considered using random numbers, but I resisted out of sheer determination ……
+  - I also considered just using random numbers, but I resisted out of sheer determination ……
 - Code and Results
   <details>
     <summary>Code : GhostLegGame.bf</summary>
