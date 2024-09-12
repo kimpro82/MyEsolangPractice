@@ -37,11 +37,11 @@ wtf than [Brainf***](/Brainfuck/README.md)
 
     > 1-: v                         // Move to the start of the corresponding ladder
         v _ v                                     
-    v      <                                     
-    v  >       1-: v               // Move down the ladder
-    v            v _ v                           
-    v            >      v                        
-    v         v      <  v                        
+     v      <                                     
+     v  >       1-: v               // Move down the ladder
+     v            v _ v                           
+     v            >      v                        
+     v         v      <  v                        
     1v        2v        3v          // Ladder entry points
     >v        v<        v<
     v>#>#<>#<#<v        v<          // Ladder paths (move horizontally/vertically)
