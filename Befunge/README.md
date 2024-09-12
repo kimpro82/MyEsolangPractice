@@ -14,8 +14,57 @@ wtf than [Brainf***](/Brainfuck/README.md)
 
 ### **\<List>**
 
+- [Ghost Leg Game (2024.09.11)](#ghost-leg-game-20240911)
 - [Use Pseudo-Docstrings and Comments (2024.09.10)](#use-pseudo-docstrings-and-comments-20240910)
 - [Hello World (2024.09.09)](#hello-world-20240909)
+
+
+## [Ghost Leg Game (2024.09.11)](#list)
+
+- Even I think it's pretty clever?!
+  - The user inputs a natural number between 1 and 3, then the program follows the ladder to display the result
+  - I also considered just using random numbers, but I resisted out of sheer determination ……
+- Code and Results
+  <details>
+    <summary>Code : GhostLegGame.bf</summary>
+
+    ```befunge
+    <                   v
+    v "Your result is " <           // Display result message
+    > : v                           // Get user input (1, 2 or 3)
+    ^ , _ & v                                      
+    v       <
+
+    > 1-: v                         // Move to the start of the corresponding ladder
+        v _ v                                     
+     v      <                                     
+     v  >       1-: v               // Move down the ladder
+     v            v _ v                           
+     v            >      v                        
+     v         v      <  v                        
+    1v        2v        3v          // Ladder entry points
+    >v        v<        v<
+    v>#>#<>#<#<v        v<          // Ladder paths (move horizontally/vertically)
+    >v        v>#>#<>#<#<v
+    v>#>#<>#<#<v        v<
+    >v        v>#>#<>#<#<v
+    v>#>#<>#<#<v        v<
+    >v        v>#>#<>#<#<v
+    v>#>#<>#<#<v        v<
+    v<        v>#>#<>#<#<v
+    > "A", @  > "B", @   > "C", @   // Output the result (A, B or C)
+    ```
+  </details>
+  <details open="">
+    <summary>Results</summary>
+
+  ```txt
+  2
+  ```
+  ```txt
+  Your result is A
+  ```
+  </details>
 
 
 ## [Use Pseudo-Docstrings and Comments (2024.09.10)](#list)
